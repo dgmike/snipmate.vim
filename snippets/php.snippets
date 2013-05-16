@@ -202,9 +202,17 @@ snippet for
 	for ($${2:i} = 0; $$2 < ${1:count}; $$2${3:++}) {
 		${4: // code...}
 	}
+snippet fore
+	foreach ($${1:variable} as $${2:key}) {
+		${3:// code...}
+	}
 snippet foreach
 	foreach ($${1:variable} as $${2:key}) {
 		${3:// code...}
+	}
+snippet forek
+	foreach ($${1:variable} as $${2:key} => $${3:value}) {
+		${4:// code...}
 	}
 snippet fun
 	${1:public }function ${2:FunctionName}(${3})
@@ -214,3 +222,5 @@ snippet fun
 # $... = array (...)
 snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
+snippet vd
+	var_dump($${1:variable});
